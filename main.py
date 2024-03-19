@@ -7,6 +7,19 @@ def encode(password):
         result = result + str(digit)
     return result
 
+def decode(encoded_pass):
+
+    decoded_pass = ""
+
+    for char in encoded_pass:
+        if int(char) > 2:
+            decoded_pass += str(int(char)-3)
+
+        if int(char) <= 2:
+            decoded_pass += str(int(char)-3 + 10)
+
+    return decoded_pass
+
 
 def print_menu():
     print("\nMenu")
