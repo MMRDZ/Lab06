@@ -1,3 +1,4 @@
+#Melvyn Rodriguez
 def encode(password):
     result = ""
     password = str(password)
